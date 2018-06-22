@@ -18,7 +18,9 @@ class PolyTreeNode
   
   end 
 
-  
+  def inspect
+    " #{value} "
+  end 
   def remove_child(child)
     raise "node is not a child" if child.parent.nil?
     child.parent = nil
